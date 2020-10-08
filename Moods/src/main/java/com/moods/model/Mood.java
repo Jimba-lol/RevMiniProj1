@@ -49,7 +49,6 @@ public class Mood {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((data == null) ? 0 : data.hashCode());
-		result = prime * result + id;
 		return result;
 	}
 
@@ -66,8 +65,6 @@ public class Mood {
 			if (other.data != null)
 				return false;
 		} else if (!data.equals(other.data))
-			return false;
-		if (id != other.id)
 			return false;
 		return true;
 	}
